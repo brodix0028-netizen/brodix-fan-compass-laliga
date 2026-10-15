@@ -1,5 +1,4 @@
 
- 
 import streamlit as st
 import pandas as pd
 from datetime import date
@@ -254,13 +253,17 @@ profile_col, stats_col = st.columns([1, 2])
 
 with profile_col:
     with st.container(border=True):
-        st.markdown(
-                   st.image("avatar.jpg", use_container_width=True)
-        )
+        st.image("avatar.jpg", use_container_width=True)
         st.markdown(
             "<div style='text-align:center;font-weight:900;"
             "font-size:19px'>Brodix Fan</div>",
             unsafe_allow_html=True
+        )
+        st.markdown(
+            "<div style='text-align:center;color:#9aa7ba;"
+            "font-size:12px'>Verified Fan · Tier 3</div>",
+            unsafe_allow_html=True
+        )
         )
         st.markdown(
             "<div style='text-align:center;color:#9aa7ba;"
